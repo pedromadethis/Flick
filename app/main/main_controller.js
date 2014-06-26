@@ -1,8 +1,10 @@
 (function(){
   'use strict';
 
-  angular.module('flick-main',[
-    'ngRoute'
+  angular.module('flick.main', [
+    'ngRoute',
+    'flick.image',
+    'flick.video'
   ])
 
   .config(function ($routeProvider) {
@@ -10,20 +12,26 @@
       .when('/', {
         templateUrl: 'main/main.html',
         controller: 'MainCtrl'
-      });
+      });    
   })
 
   .controller('MainCtrl', [
 
     '$scope',
+    'imageService',
+    'videoService',
 
     function (
 
-      $scope
+      $scope,
+      imageService,
+      videoService
 
     ) {
-      
-      
+
+      $scope.images = imageService.images();
+
+      $scope.videos = videoService.videos();
 
     }
   ]);
