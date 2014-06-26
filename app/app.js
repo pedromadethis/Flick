@@ -2,17 +2,20 @@
 	'use strict';
 
 	angular.module('flick', [
+   'flick.main',
    'ngRoute',
-   'flick-main',
    'templates'
    ])
 
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $sceProvider) {
 
     $routeProvider
       .otherwise({
         redirectTo: '/'
       });
+
+    // @fixme - remove and use $sce.trustAsResourceUrl();
+    $sceProvider.enabled(false);
       
   });
 	  
