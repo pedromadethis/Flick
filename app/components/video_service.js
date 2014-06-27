@@ -17,6 +17,8 @@
 
       /**
        * @description returns an array of videos
+       * @todo may be easier to combine this and the image
+       * service together to couple videos to images
        */
       this.videos = function() {
         var videos = [
@@ -28,7 +30,7 @@
           }
         ];
         return videos;
-      }
+      };
 
     }
   ]);
