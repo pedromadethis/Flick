@@ -6,6 +6,6 @@
   .constant('PATH', {
     image: 'http://placehold.it/',
     video: '//player.vimeo.com/video/'
-  })
+  });
 
 })();
