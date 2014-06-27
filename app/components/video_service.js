@@ -7,12 +7,10 @@
 
   .service('videoService', [
 
-    '$sce',
     'PATH',
 
     function(
 
-      $sce,
       PATH
 
     ) {
