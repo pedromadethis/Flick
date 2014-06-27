@@ -4,7 +4,8 @@
 	angular.module('flick', [
    'flick.main',
    'ngRoute',
-   'templates'
+   'templates',
+   'angular-carousel'
    ])
 
   .config(function ($routeProvider, $sceProvider) {
