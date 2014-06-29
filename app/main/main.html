@@ -1,17 +1,5 @@
-<!-- <div data-ng-repeat="image in images">
-
-  <img src="{{ image.url }}"/>
-
-</div> -->
-
-<ul rn-carousel rn-carousel-control rn-carousel-buffered class="image">
-  <li ng-repeat="image in images">
-    <img style="width:100%" src="{{ image.url }}"/>
+<ul rn-carousel rn-carousel-buffered rn-carousel-control>
+  <li ng-repeat="image in images" class="background-image" ng-style="{ backgroundImage: 'url(' + image.url + ')' }">
+    <div class="top-layer"></div>
   </li>
 </ul>
-
-<div data-ng-repeat="video in videos">
-
-  <iframe src="{{ video.url }}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  
-</div>
