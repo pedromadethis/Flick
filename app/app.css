@@ -1,6 +1,11 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0;  
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 .background-image {
@@ -9,4 +14,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   height:100vh;
+}
+
+.rn-carousel-control.rn-carousel-control:before {
+  content: none;
+}
+
+.rn-carousel-control {
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+}
+
+.rn-carousel-control-next {
+  border-top: solid 4px #000;
+  border-right: solid 4px #000;
+}
+
+.rn-carousel-control-prev {
+  border-left: solid 4px #000;
+  border-bottom: solid 4px #000;
 }
