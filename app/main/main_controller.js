@@ -32,6 +32,12 @@
 
       $scope.videos = videoService.videos();
 
+      this.clickPlay = function() {
+        console.log('play clicked');
+      }
+
+      $scope.clickPlay = this.clickPlay;
+
     }
   ]);
 

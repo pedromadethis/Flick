@@ -1,5 +1,7 @@
 <ul rn-carousel rn-carousel-buffered rn-carousel-control>
   <li ng-repeat="image in images" class="background-image" ng-style="{ backgroundImage: 'url(' + image.url + ')' }">
-    <div class="top-layer"></div>
+    <div class="play-button-outer" data-ng-click="clickPlay()">
+      <div class="play-button"></div>
+    </div>
   </li>
 </ul>

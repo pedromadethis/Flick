@@ -22,8 +22,9 @@ html {
 
 .rn-carousel-control {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1em;
+  height: 1em;
+  margin-top: 0;
   -webkit-transform: rotate(45deg);
 }
 
@@ -36,3 +37,35 @@ html {
   border-left: solid 4px #000;
   border-bottom: solid 4px #000;
 }
+
+.play-button-outer {
+  margin: -5em auto;
+  top: 50%;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  background-color: rgba(0, 0, 0, .25);
+  cursor: pointer;
+}
+
+.play-button {
+  margin: 0 auto;
+  top: 25%;
+  position: relative;  
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5em 0 2.5em 5em;
+  border-color: transparent transparent transparent #000;
+  opacity: .75; 
+}
+
+.play-button-outer:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.play-button-outer:hover .play-button {
+  opacity: 1;
+}
+
+
