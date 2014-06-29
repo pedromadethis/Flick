@@ -21,10 +21,10 @@
       this.images = function() {
         var images = [
           {
-            url: PATH.image + '400'
+            url: PATH.image + '1920x1080'
           },
           {
-            url: PATH.image + '400'
+            url: PATH.image + '1920x1080'
           }
         ];
         return images;
