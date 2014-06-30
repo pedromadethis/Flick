@@ -24,6 +24,11 @@ gulp.task('css', function(){
         .pipe(gulp.dest('./build'));
 });
 
+gulp.task('assets', function(){
+    gulp.src('./app/**/*.jpg')
+        .pipe(gulp.dest('./build'));
+});
+
 gulp.task('vendorJS', function(){
     //concatenate vendor JS files
     gulp.src(['!./bower_components/**/*.min.js',
@@ -69,4 +74,4 @@ gulp.task('connect', plugins.connect.server({
     livereload: true
 }));
 
-gulp.task('default',['connect','scripts','templates','css','copy-index','vendorJS','vendorCSS','watch']);
+gulp.task('default',['connect','scripts','templates','css','assets','copy-index','vendorJS','vendorCSS','watch']);
