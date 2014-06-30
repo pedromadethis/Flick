@@ -21,10 +21,13 @@
       this.images = function() {
         var images = [
           {
-            url: PATH.image + '1920x1080'
+            url: PATH.image + 'placeholder1.jpg'
           },
           {
-            url: PATH.image + '1920x1080'
+            url: PATH.image + 'placeholder2.jpg'
+          },
+          {
+            url: PATH.image + 'placeholder3.jpg'
           }
         ];
         return images;

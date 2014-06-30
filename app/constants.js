@@ -4,7 +4,7 @@
   angular.module('flick.constants', [])
 
   .constant('PATH', {
-    image: 'http://placehold.it/',
+    image: 'assets/img/',
     video: '//player.vimeo.com/video/'
   });
 

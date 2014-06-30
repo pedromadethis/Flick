@@ -23,10 +23,13 @@
       this.videos = function() {
         var videos = [
           {
-            url: PATH.video + '90388983'
+            url: PATH.video + '98345492'
           },
           {
-            url: PATH.video + '90388983'
+            url: PATH.video + '98633132'
+          },
+          {
+            url: PATH.video + '76559113'
           }
         ];
         return videos;
