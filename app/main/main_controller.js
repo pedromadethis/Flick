@@ -33,7 +33,7 @@
       $scope.videos = videoService.videos();
 
       this.clickPlay = function() {
-        $scope.autoplay = 1;
+        $scope.videoPlaying = 1;
       }
 
       $scope.clickPlay = this.clickPlay;
