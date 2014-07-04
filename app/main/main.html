@@ -1,8 +1,18 @@
-<ul rn-carousel rn-carousel-buffered rn-carousel-control>
-  <li ng-repeat="image in images" class="background-image" ng-style="{ backgroundImage: 'url(' + image.url + ')' }">
-    <div data-ng-if="!videoPlaying" class="play-button-outer" data-ng-click="clickPlay()">
+
+<ul rn-carousel rn-carousel-buffered rn-carousel-control index-watcher>
+
+  <li ng-repeat="asset in assets" class="background-image" ng-style="{ backgroundImage: 'url(' + asset.image + ')' }">
+
+    <div data-ng-if="switchedViews === $index && videoIndex !== $index" class="play-button-outer" data-ng-click="clickPlay($index)">
+
       <div class="play-button"></div>
+
     </div>
-    <iframe data-ng-if="videoPlaying" src="//player.vimeo.com/video/98345492?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=fff&amp;autoplay=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+    <iframe data-ng-if="switchedViews === $index && videoIndex === $index" data-ng-src="{{ asset.video }}" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
   </li>
+
 </ul>
+
+
