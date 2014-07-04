@@ -8,7 +8,7 @@
    'angular-carousel'
    ])
 
-  .config(function ($routeProvider, $locationProvider, $sceProvider) {
+  .config(function ($routeProvider, $locationProvider, $sceDelegateProvider) {
 
     $routeProvider
       .otherwise({
@@ -17,8 +17,10 @@
 
     $locationProvider.html5Mode(true);
 
-    // @fixme - remove and use $sce.trustAsResourceUrl();
-    $sceProvider.enabled(false);
+    $sceDelegateProvider.resourceUrlWhitelist([
+      'self',
+      'http://player.vimeo.com/video/**'
+    ]);
       
   });
 	  
