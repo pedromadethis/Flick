@@ -1,7 +1,7 @@
 {
-  "name": "gulp-ng-seed",
-  "version": "0.0.0",
-  "main": "app.js",
+  "name": "flick",
+  "version": "0.0.1",
+  "main": "app/app.js",
   "devDependencies": {
     "gulp": "~3.5.5",
     "gulp-concat": "~2.1.7",
