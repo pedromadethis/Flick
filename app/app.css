@@ -9,7 +9,6 @@ html {
 }
 
 .background-image {
-  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,11 +19,21 @@ html {
   content: none;
 }
 
+.rn-carousel-control:after {
+   content: "";
+   display: block;
+   width: 2em;
+   height: 2em;
+   background-color: rgba(0, 0, 0, .25);
+   margin:-.5em;
+}
+
 .rn-carousel-control {
   display: block;
   width: 1em;
   height: 1em;
   margin-top: -.5em;
+  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
