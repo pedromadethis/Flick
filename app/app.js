@@ -21,7 +21,7 @@
       'self',
       'http://player.vimeo.com/video/**'
     ]);
-      
+
   });
-	  
+
 })();

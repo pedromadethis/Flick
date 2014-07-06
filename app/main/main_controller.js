@@ -11,7 +11,7 @@
     $routeProvider
       .when('/', {
         templateUrl: 'main/main.html'
-      });    
+      });
   })
 
   .controller('MainCtrl', [
@@ -26,15 +26,15 @@
       assetsService,
       PATH
 
-    ) {      
+    ) {
 
       this.clickPlay = function(key) {
         $scope.videoIndex = key;
       };
 
       $scope.clickPlay = this.clickPlay;
-      
-      $scope.assets = assetsService.assets();     
+
+      $scope.assets = assetsService.assets();
 
       $scope.$on('indexChange', function(event, message){
         $scope.switchedViews = message;

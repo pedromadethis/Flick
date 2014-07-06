@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 html {
@@ -62,13 +62,13 @@ html {
 .play-button {
   margin: 0 auto;
   top: 25%;
-  position: relative;  
+  position: relative;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 2.5em 0 2.5em 5em;
   border-color: transparent transparent transparent #000;
-  opacity: .75; 
+  opacity: .75;
 }
 
 .play-button-outer:hover {
