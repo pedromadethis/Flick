@@ -3,8 +3,7 @@
 
   angular.module('flick.main', [
     'ngRoute',
-    'flick.image',
-    'flick.video',
+    'flick.assets',
     'flick.constants'
   ])
 
@@ -18,40 +17,24 @@
   .controller('MainCtrl', [
 
     '$scope',
-    'imageService',
-    'videoService',
+    'assetsService',
     'PATH',
 
     function (
 
       $scope,
-      imageService,
-      videoService,
+      assetsService,
       PATH
 
-    ) {
-
-      // @todo - needs to be moved back out into a service
-      // preferably, possibly a single service rather than
-      // two seperate ones
-      $scope.assets = [{
-        image: PATH.image + 'placeholder1.jpg',
-        video: PATH.video + '98345492' + PATH.querystring
-      },
-      {
-        image: PATH.image + 'placeholder2.jpg',
-        video: PATH.video + '98633132' + PATH.querystring
-      },
-      {
-        image: PATH.image + 'placeholder3.jpg',
-        video: PATH.video + '76559113' + PATH.querystring
-      }];
+    ) {      
 
       this.clickPlay = function(key) {
         $scope.videoIndex = key;
       };
 
       $scope.clickPlay = this.clickPlay;
+      
+      $scope.assets = assetsService.assets();     
 
       $scope.$on('indexChange', function(event, message){
         $scope.switchedViews = message;
