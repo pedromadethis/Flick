@@ -1,7 +1,15 @@
-flick
+Flick
 =====
 
-Fullscreen Background Vimeo Video Slider w/ Angular and CSS3 Transitions
+Angular.js Fullscreen Video Slider
+
+### Features
+- Image Slider
+- Responsive, mobile-friendly
+- Fullscreen video player
+- Vimeo compatible
+- Angular.js
+- CSS3 Transitions
 
 ### Getting Started
 
