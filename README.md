@@ -1,14 +1,14 @@
 Flick
 =====
 
-Angular.js Fullscreen Video Slider
+AngularJS Fullscreen Video Slider
 
 ### Features
 - Image Slider
 - Responsive, mobile-friendly
 - Fullscreen video player
 - Vimeo compatible
-- Angular.js
+- AngularJS
 - CSS3 Transitions
 
 ### Getting Started
